@@ -1,0 +1,103 @@
+*{
+  padding: O;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+  
+body{
+  background-color: #FFF;
+  font-family: 'heebo', sans-serif;
+}
+nav{
+  background-color: #FFF;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 7px 2px #DDD;
+}
+.logo{
+  margin: 30px;
+}
+.logo img{
+  width: 30px;
+}
+.menu-btn{
+  position: absolute;
+  z-index: 3;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+.btn-line:hover{
+  background-color: red;
+}
+.menu-btn .btn-line{
+  widows: 28px;
+  height: 3px;
+  width: 35px;
+  margin: 0 0 5px 0;
+  background-color: #111;
+}
+.btn-line:nth-child(2){
+  width: 0%;
+}
+.btn-line:nth-child(3){
+  width: 50%;
+}
+
+/* grid */
+.wrapper{
+  height: calc(100vh - 90px);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 1fr;
+}
+.box1{
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-items: center;
+}
+.name{
+  /* font-size: 1.5rem; */
+}
+.box2{
+  overflow: hidden;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+}
+.box2 .photo{
+  margin: auto;
+}
+.box2 .photo img{
+  width: 100%;
+}
+.box3{
+  background-color: #222;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: #EEE;
+}
+.box3 .pageNumber{
+  font-size: 3rem;
+
+}
+/* .box3 .pageNumber .line{
+  font-weight: 100;
+  border: #FFF solid 1px;
+} */
+.box4{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #fcfcfc;
+}
+.box4 .info{
+  padding: 3em;
+}
+.rotate{
+  transform: rotate(270deg);
+  flex: 1;
+}
