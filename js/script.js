@@ -8,7 +8,7 @@ console.log(line1, line2, line3);
 
 addEventListener;
 menuBtn.addEventListener("mouseover", menuOver);
-menuBtn.addEventListener("mouseout", menuOut);
+menuBtn.addEventListener("mouseleave", menuOut);
 menuBtn.addEventListener("click", menuShow);
 
 function menuOver() {
@@ -27,7 +27,7 @@ function menuShow() {
   line1.style.marginBottom = "0";
   line2.style.marginBottom = "0";
   line1.style.transform = "translateY(5px) rotate(45deg)";
-  line3.style.transform = "translateY(0px) rotate(-45deg)";
+  line3.style.transform = "translateY(0px) rotate(137deg)";
 }
 
 /*
