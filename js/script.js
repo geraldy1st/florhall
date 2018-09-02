@@ -13,9 +13,9 @@ menuBtn.addEventListener("click", menuShow);
 
 function menuOver() {
   line1.style.width = "35px";
-  line2.style.width = "27px";
-  line2.style.marginLeft = "8px";
-  line3.style.width = "0px";
+  //   line2.style.width = "27px";
+  //   line2.style.marginLeft = "8px";
+  //   line3.style.width = "0px";
 }
 function menuOut() {
   line2.style.width = "35px";
