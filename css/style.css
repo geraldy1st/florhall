@@ -27,11 +27,9 @@ nav {
   position: absolute;
   z-index: 3;
   right: 30px;
-  top: 30px;
+  top: 35px;
   cursor: pointer;
-}
-.btn-line:hover {
-  background-color: red;
+  /* background-color: red; */
 }
 .btn-menu .btn-line {
   height: 3px;

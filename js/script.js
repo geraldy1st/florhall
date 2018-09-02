@@ -6,28 +6,29 @@ const line3 = document.querySelectorAll(".btn-line")[2];
 
 console.log(line1, line2, line3);
 
-addEventListener;
+// addEventListener;
 menuBtn.addEventListener("mouseover", menuOver);
 menuBtn.addEventListener("mouseleave", menuOut);
 menuBtn.addEventListener("click", menuShow);
 
 function menuOver() {
-  line3.style.width = "0px";
+  line1.style.width = "35px";
   line2.style.width = "27px";
   line2.style.marginLeft = "8px";
+  line3.style.width = "0px";
 }
 function menuOut() {
-  line3.style.width = "35px";
   line2.style.width = "35px";
   line2.style.marginLeft = "0px";
+  line3.style.width = "35px";
 }
 
 function menuShow() {
   line2.style.opacity = "0";
   line1.style.marginBottom = "0";
   line2.style.marginBottom = "0";
-  line1.style.transform = "translateY(5px) rotate(45deg)";
-  line3.style.transform = "translateY(0px) rotate(137deg)";
+  line1.style.transform = "translate(-1px, 5px) rotate(45deg)";
+  line3.style.transform = "translate(-2px, -1px) rotate(-45deg)";
 }
 
 /*
