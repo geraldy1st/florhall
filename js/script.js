@@ -29,6 +29,12 @@ function menuShow() {
   line1.style.transform = "translate(-1px, 5px) rotate(45deg)";
   line3.style.transform = "translate(-2px, -1px) rotate(-45deg)";
 }
+function menuOver() {
+  line1.style.width = "35px";
+  line2.style.width = "27px";
+  line2.style.marginLeft = "8px";
+  line3.style.width = "0px";
+}
 
 /*
 .btn-menu .btn-line {

@@ -180,4 +180,12 @@ function menuShow() {
     grid-row: 2/3;
     grid-column: 2/3;
   }
+  .menu ul li {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .menu ul li:nth-child(2n) {
+    text-align: center;
+  }
 }
