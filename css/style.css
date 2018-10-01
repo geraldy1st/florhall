@@ -1,5 +1,5 @@
 * {
-  padding: O;
+  padding: 0;
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
@@ -37,6 +37,70 @@ nav {
   margin: 0 0 5px 0;
   background-color: #111;
   transition: 0.2s ease-in-out;
+}
+
+/* btn-line JS */
+.btn-line2-hover {
+  width: "27px";
+  margin-left: "8px";
+}
+.btn-line3-hover {
+  width: 0;
+}
+
+/* function menuOver() {
+  line1.style.width = "35px";
+  line2.style.width = "27px";
+  line2.style.marginLeft = "8px";
+  line3.style.width = "0px";
+}
+function menuOut() {
+  line2.style.width = "35px";
+  line2.style.marginLeft = "0px";
+  line3.style.width = "35px";
+}
+
+function menuShow() {
+  line2.style.opacity = "0";
+  line1.style.marginBottom = "0";
+  line2.style.marginBottom = "0";
+  line1.style.transform = "translate(-1px, 5px) rotate(45deg)";
+  line3.style.transform = "translate(-2px, -1px) rotate(-45deg)";
+} */
+.menu {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  left: -80%;
+  z-index: 10;
+  /* box-shadow: 6px 1px 30px 4px rgba(0, 0, 0, 0.4); */
+  box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.menuOn {
+  left: 0;
+}
+
+.menu ul {
+  background-color: rgb(255, 255, 255);
+}
+
+.menu ul li {
+  font-size: 5rem;
+  text-align: left;
+  cursor: pointer;
+  /* margin: 10px auto; */
+}
+.menu ul li:hover {
+  color: rgb(168, 255, 110);
+  background-color: #111;
+  text-transform: capitalize;
+}
+.menu ul li:nth-child(2n) {
+  text-align: right;
 }
 
 /* grid */
