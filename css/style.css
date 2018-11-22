@@ -31,6 +31,18 @@ nav {
   cursor: pointer;
   /* background-color: red; */
 }
+.closeMenu .btn-line:nth-child(1) {
+  margin-bottom: 0;
+  transform: rotate(45deg) translate(1px, 4px);
+}
+.closeMenu .btn-line:nth-child(2) {
+  opacity: 0;
+  margin-bottom: 0;
+}
+.closeMenu .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, -2px);
+}
+
 .btn-menu .btn-line {
   height: 3px;
   width: 35px;
@@ -181,11 +193,12 @@ function menuShow() {
     grid-column: 2/3;
   }
   .menu ul li {
-    font-size: 0.7rem;
-    text-align: center;
+    font-size: 0.85rem;
+    text-align: left;
     font-weight: lighter;
+    padding: 4.5em;
   }
   .menu ul li:nth-child(2n) {
-    text-align: center;
+    text-align: left;
   }
 }

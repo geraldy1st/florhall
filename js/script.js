@@ -10,7 +10,7 @@ console.log(line1, line2, line3);
 // addEventListener;
 btnMenu.addEventListener("mouseover", menuOver);
 btnMenu.addEventListener("mouseleave", menuOut);
-btnMenu.addEventListener("click", menuShow);
+// btnMenu.addEventListener("click", menuShow);
 
 function menuOver() {
   line2.classList.toggle("btn-line2-hover");
@@ -29,12 +29,12 @@ function menuShow() {
   line1.style.transform = "translate(-1px, 5px) rotate(45deg)";
   line3.style.transform = "translate(-2px, -1px) rotate(-45deg)";
 }
-function menuOver() {
-  line1.style.width = "35px";
-  line2.style.width = "27px";
-  line2.style.marginLeft = "8px";
-  line3.style.width = "0px";
-}
+// function menuOver() {
+//   line1.style.width = "35px";
+//   line2.style.width = "27px";
+//   line2.style.marginLeft = "8px";
+//   line3.style.width = "0px";
+// }
 
 /*
 .btn-menu .btn-line {
@@ -48,5 +48,6 @@ function menuOver() {
 $(document).ready(function() {
   $("#btnMenu").click(function() {
     $(".menu").toggleClass("menuOn");
+    $(this).toggleClass("closeMenu");
   });
 });
