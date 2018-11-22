@@ -40,7 +40,7 @@ nav {
   margin-bottom: 0;
 }
 .closeMenu .btn-line:nth-child(3) {
-  transform: rotate(-45deg) translate(1px, -2px);
+  transform: rotate(-45deg) translate(0px, -3px);
 }
 
 .btn-menu .btn-line {
